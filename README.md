@@ -11,4 +11,4 @@
 |- views    //模板视图文件目录（html）
 |- .gitignore   //git忽略的文件（不提交）
 |- app.js   //应用入口文件
-|- package.json
+|- package.json  
