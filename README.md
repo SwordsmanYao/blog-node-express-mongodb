@@ -14,3 +14,8 @@
 ├── app.js          //应用入口文件
 └── package.json
 ```
+## 安装
+1. npm install
+2. 安装 mongodb
+3. 运行数据库： D:\MongoDB\Server\3.4\bin>mongod --dbpath=E:\study\gitpro\blog-node-express-mongodb\db --port=27017
+4. 安装 robomongo （数据库客户端）

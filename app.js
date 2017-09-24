@@ -45,6 +45,13 @@ app.use('/api', require('./routers/api'));
 app.use('/', require('./routers/main'));
 
 
-mongoose.connect();
+mongoose.connect('mongodb://localhost:27017/blog',function(err){
+    if(err){
+        console.log('数据库连接失败');
+    }else{
+        console.log('数据库连接成功');
+        //数据库连接成功后开始监听应用端口
+        app.listen(8081);
+    }
+});
 
-app.listen(8081);
