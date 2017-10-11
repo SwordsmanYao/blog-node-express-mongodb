@@ -23,6 +23,14 @@ $(function(){
             dataType:'json',
             success:function(result){
                 console.log(result);
+                $registerBox.find('.colWarning').html(result.message);
+                if(result.code == 0){//注册成功
+                    setTimeout(function(){
+                        $registerBox.hide();
+                        $loginBox.show();
+                    },1000);
+
+                }
             }
         });
 
